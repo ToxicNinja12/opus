@@ -32,7 +32,7 @@ function Testimonials() {
   ];
 
   return (
-    <section className="text-sky-950 px-20 py-32">
+    <section className="text-sky-950 px-20 pt-32 pb-16">
       <h2 className="font-lead text-center text-xl mb-10">
         Trusted by 40+ leading companies
       </h2>
