@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <section className="grid grid-cols-6 gap-20 px-20 pt-12 pb-32 text-sky-950">
+    <section className="grid grid-cols-6 gap-20 px-20 py-12 text-sky-950">
       <div className="col-span-4 -col-end-1">
         <h3 className="font-lead text-2xl mb-8">
           We provide a variety of services.

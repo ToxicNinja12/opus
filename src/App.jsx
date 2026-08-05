@@ -4,6 +4,7 @@ import Services from "./sections/Services";
 import Products from "./sections/Products";
 import Featured from "./sections/Featured";
 import Timeline from "./sections/Timeline";
+import Regions from "./sections/Regions";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
 import CTA from "./sections/CTA";
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Regions />
       <Products />
       <Featured />
       <Timeline />
