@@ -18,7 +18,7 @@ function Hero() {
           className="object-[25%] object-cover brightness-90 h-full mask-t-from-50%"
         />
       </div>
-      <div className="grid grid-rows-[auto_1fr_auto] bg-sky-950 text-sky-50 py-8 pl-10 pr-20 z-5">
+      <div className="grid grid-rows-[auto_1fr_auto] bg-secondary text-sky-50 py-8 pl-10 pr-20 z-5">
         <Navbar />
         <div className="self-end mb-36">
           <h1 className="font-lead text-5xl">

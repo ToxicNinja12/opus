@@ -6,4 +6,10 @@
   --font-sans: "Nunito", sans-serif;
   --font-lead: "Montserrat", sans-serif;
   --font-footer: "Geist", sans-serif;
+  --color-primary-dark: hsl(210, 44%, 44%);
+  --color-primary: #5287bb;
+  --color-primary-light: hsl(210, 100%, 96%);
+  --color-primary-light-2: hsl(210, 100%, 93%);
+  --color-secondary: #1d3871;
+  --color-sky-950: #112244;
 }

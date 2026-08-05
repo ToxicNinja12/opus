@@ -14,7 +14,7 @@ import prod12 from "../assets/featured/sound-attenuator-rectangular.jpg";
 
 function Featured() {
   return (
-    <section className="text-sky-950 bg-sky-50 px-20 pt-16 pb-32">
+    <section className="text-primary-dark bg-primary-light px-20 pt-16 pb-32">
       <div className="mb-10">
         <h2 className="font-lead text-xl">Featured solutions</h2>
       </div>

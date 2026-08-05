@@ -20,7 +20,7 @@ function Navbar({ className }) {
         </li>
         <li className="ml-auto relative">
           <a href="#">Contact Us</a>
-          <Underline className="text-red-500 absolute top-2 right-2" />
+          <Underline className="text-primary absolute top-2 right-2" />
         </li>
       </ul>
     </nav>
