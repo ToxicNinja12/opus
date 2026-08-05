@@ -1,4 +1,10 @@
-function Card({ image = null, title, subtitle, onlyText = false }) {
+function Card({
+  image = null,
+  title,
+  subtitle,
+  onlyText = false,
+  small = false,
+}) {
   if (onlyText) {
     return (
       <div className="flex flex-col bg-sky-100 text-sky-900 px-3 py-4 justify-center items-center gap-2">
@@ -6,6 +12,17 @@ function Card({ image = null, title, subtitle, onlyText = false }) {
           {title}
         </p>
         <a href="#">{subtitle}</a>
+      </div>
+    );
+  } else if (small) {
+    return (
+      <div className="bg-sky-100 text-sky-900 px-2 py-3">
+        <div className="mb-4">
+          <img src={image} alt="" />
+        </div>
+        <div>
+          <p className="font-bold leading-tight">{title}</p>
+        </div>
       </div>
     );
   } else {

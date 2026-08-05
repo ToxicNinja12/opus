@@ -9,7 +9,7 @@ import prod7 from "../assets/products/acoustic-glass-partition.jpg";
 
 function Products() {
   return (
-    <section className="text-sky-950 bg-sky-50 px-20 py-32">
+    <section className="text-sky-950 bg-sky-50 px-20 pt-32 pb-16">
       <div className="mb-10">
         <h2 className="font-lead text-xl">View our products</h2>
       </div>
