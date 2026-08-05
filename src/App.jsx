@@ -3,6 +3,7 @@ import About from "./sections/About";
 import Services from "./sections/Services";
 import Products from "./sections/Products";
 import Featured from "./sections/Featured";
+import Timeline from "./sections/Timeline";
 import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
 import CTA from "./sections/CTA";
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Products />
       <Featured />
+      <Timeline />
       <Testimonials />
       <FAQ />
       <CTA />
