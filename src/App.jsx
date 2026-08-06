@@ -21,8 +21,8 @@ function App() {
       <Featured />
       <Timeline />
       <Testimonials />
-      <FAQ />
       <CTA />
+      <FAQ />
       <Footer />
     </>
   );

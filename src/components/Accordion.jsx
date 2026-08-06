@@ -23,7 +23,7 @@ function AccordionItem({ title, defaultOpen = false, children }) {
 }
 
 function Accordion({ children }) {
-  return <div className="divide-y-0 col-span-3 row-start-1">{children}</div>;
+  return <div className="divide-y-0 col-span-3">{children}</div>;
 }
 
 export { Accordion, AccordionItem };
