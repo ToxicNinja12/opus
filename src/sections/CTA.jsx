@@ -1,9 +1,9 @@
 function CTA() {
   return (
-    <section className="flex flex-col justify-center items-center px-20 pt-8 pb-16 text-sky-50">
-      <div className="bg-secondary px-12 py-16 grid grid-cols-[3fr_2fr] gap-20 w-full lg:w-5xl">
+    <section className="flex flex-col justify-center items-center px-6 sm:px-10 lg:px-20 pt-8 pb-16 text-sky-50">
+      <div className="bg-secondary px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-20 w-full lg:w-5xl">
         <div className="">
-          <h2 className="font-lead font-bold text-4xl mb-4">
+          <h2 className="font-lead font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
             Let’s design how your space should sound.
           </h2>
           <p className="leading-snug">

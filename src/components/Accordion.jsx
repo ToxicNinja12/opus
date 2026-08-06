@@ -8,7 +8,7 @@ function AccordionItem({ title, defaultOpen = false, children }) {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between gap-4 py-4 font-semibold text-sky-950"
+        className="flex w-full items-center justify-between gap-4 py-4 text-left font-semibold text-sky-950"
       >
         <span>{title}</span>
         <span className="shrink-0 text-slate-400">
@@ -23,7 +23,7 @@ function AccordionItem({ title, defaultOpen = false, children }) {
 }
 
 function Accordion({ children }) {
-  return <div className="divide-y-0 col-span-3">{children}</div>;
+  return <div className="divide-y-0 lg:col-span-3">{children}</div>;
 }
 
 export { Accordion, AccordionItem };

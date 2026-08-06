@@ -2,8 +2,10 @@ import { Accordion, AccordionItem } from "../components/Accordion";
 
 function FAQ() {
   return (
-    <section className="grid grid-cols-4 px-20 pt-16 pb-32 gap-12 text-sky-950">
-      <h2 className="font-lead text-xl mb-10">Frequently Asked Questions</h2>
+    <section className="grid grid-cols-1 lg:grid-cols-4 px-6 sm:px-10 lg:px-20 pt-16 pb-16 lg:pb-32 gap-6 lg:gap-12 text-sky-950">
+      <h2 className="font-lead text-xl mb-4 lg:mb-10">
+        Frequently Asked Questions
+      </h2>
       <Accordion>
         <AccordionItem title="What does Opus Acoustics provide?" defaultOpen>
           Acoustic consultancy, site surveys, noise mapping, system
