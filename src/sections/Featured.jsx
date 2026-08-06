@@ -14,11 +14,11 @@ import prod12 from "../assets/featured/sound-attenuator-rectangular.jpg";
 
 function Featured() {
   return (
-    <section className="text-primary-dark bg-primary-light px-20 pt-16 pb-32">
+    <section className="text-primary-dark bg-primary-light px-6 sm:px-10 lg:px-20 pt-16 pb-16 lg:pb-32">
       <div className="mb-10">
         <h2 className="font-lead text-xl">Featured solutions</h2>
       </div>
-      <div className="grid grid-cols-6 grid-rows-2 gap-x-10 gap-y-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-4 sm:gap-x-6 lg:gap-x-10 gap-y-6">
         <Card image={prod1} title="Acoustic Furnitures" small />
         <Card image={prod2} title="Polyurathene Foam" small />
         <Card image={prod3} title="Acoustic Enclosure" small />
