@@ -32,16 +32,17 @@ function Testimonials() {
   ];
 
   return (
-    <section className="text-sky-950 px-20 py-16">
-      <h2 className="font-lead text-center text-xl mb-10">
+    <section className="text-sky-950 px-6 sm:px-10 lg:px-20 py-12 lg:py-16">
+      <h2 className="font-lead text-center text-xl mb-8 lg:mb-10">
         Trusted by 40+ leading companies
       </h2>
-      <div className="flex flex-wrap justify-center items-center gap-12">
-        {logos.map((logo) => (
+      <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-12">
+        {logos.map((logo, index) => (
           <img
+            key={index}
             src={logo}
             alt="Client logo"
-            className="h-18"
+            className="h-10 sm:h-14 lg:h-18"
             style={{
               filter:
                 "contrast(25%) sepia(100%) hue-rotate(180deg) saturate(100%)",
