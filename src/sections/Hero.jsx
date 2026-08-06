@@ -4,7 +4,7 @@ import Logo from "../assets/logo.png";
 
 function Hero() {
   return (
-    <section className="grid grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 md:grid-cols-2 min-h-screen bg-sky-50">
+    <section className="grid grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 md:grid-cols-2 md:min-h-screen bg-sky-50">
       <div className="relative bg-black/90 h-64 sm:h-80 md:h-auto">
         <img
           src={Logo}
@@ -15,7 +15,7 @@ function Hero() {
         <img
           src={Test}
           alt=""
-          className="object-[25%] object-cover brightness-90 h-full w-full mask-t-from-50%"
+          className="block object-[25%] object-cover brightness-90 h-full w-full mask-t-from-50%"
         />
       </div>
       <div className="grid grid-rows-[auto_1fr_auto] bg-secondary text-sky-50 px-6 py-8 md:pl-10 md:pr-20 z-5">
