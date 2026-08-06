@@ -15,8 +15,8 @@ function App() {
     <>
       <Hero />
       <About />
-      <Services />
-      <Regions />
+      {/* <Services />
+      <Regions /> */}
       <Products />
       <Featured />
       <Timeline />
