@@ -9,7 +9,7 @@ function Hero() {
         <img
           src={Logo}
           alt=""
-          className="absolute mx-6 my-4 sm:mx-10 md:mx-20 z-10"
+          className="absolute mx-6 my-4 sm:mx-10 md:mx-20 z-1"
           width={110}
         />
         <img
