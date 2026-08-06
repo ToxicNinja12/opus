@@ -1,11 +1,11 @@
 function Services() {
   return (
-    <section className="grid grid-cols-6 gap-20 px-20 py-12 text-sky-950">
-      <div className="col-span-4 -col-end-1">
-        <h3 className="font-lead text-2xl mb-8">
+    <section className="grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 py-12">
+      <div className="lg:col-span-4 lg:-col-end-1">
+        <h3 className="font-lead text-xl sm:text-2xl mb-8">
           We provide a variety of services.
         </h3>
-        <ol className="grid grid-cols-3 grid-rows-2 gap-x-8 gap-y-4">
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-x-8 gap-y-8 lg:gap-y-4">
           <li>
             <p className="mb-3 text-slate-300">01</p>
             <p className="mb-1">Architectural acoustics</p>
