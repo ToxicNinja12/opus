@@ -9,11 +9,11 @@ import prod7 from "../assets/products/acoustic-glass-partition.jpg";
 
 function Products() {
   return (
-    <section className="text-primary-dark bg-primary-light px-20 pt-32 pb-16">
+    <section className="text-primary-dark bg-primary-light px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-16">
       <div className="mb-10">
         <h2 className="font-lead text-xl">View our products</h2>
       </div>
-      <div className="grid grid-cols-4 grid-rows-fr gap-x-16 gap-y-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 grid-rows-fr gap-x-4 sm:gap-x-8 lg:gap-x-16 gap-y-6 sm:gap-y-8">
         <Card
           image={prod1}
           title="Acoustic Spray"
