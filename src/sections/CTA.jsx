@@ -1,7 +1,7 @@
 function CTA() {
   return (
     <section className="flex flex-col justify-center items-center px-20 pt-8 pb-16 text-sky-50">
-      <div className="bg-secondary px-12 py-16 grid grid-cols-[3fr_2fr] gap-20 w-5xl">
+      <div className="bg-secondary px-12 py-16 grid grid-cols-[3fr_2fr] gap-20 w-full lg:w-5xl">
         <div className="">
           <h2 className="font-lead font-bold text-4xl mb-4">
             Let’s design how your space should sound.
