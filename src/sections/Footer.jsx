@@ -2,7 +2,7 @@ import Logo from "../assets/logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-secondary pt-32 pb-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-secondary pt-16 sm:pt-20 lg:pt-32 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-wrap justify-between gap-y-12 lg:gap-x-8">
           <div className="w-full md:w-[45%] lg:w-[35%] flex flex-col items-center md:items-start text-center md:text-left">
@@ -58,7 +58,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left basis-22">
+          <div className="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-sm text-sky-50 font-lead">Social Links</h3>
             <div className="flex flex-col gap-2 mt-6">
               <a
@@ -94,7 +94,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left basis-32">
+          <div className="w-full md:w-[45%] lg:w-[15%] flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-sm text-sky-50 font-lead">Contact</h3>
             <div className="flex flex-col gap-2 mt-6">
               <a
@@ -128,12 +128,12 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-12 lg:mt-16">
           <p className="text-xs text-sky-50/60">
             © 2026 Opus UAE &mdash; All Rights Reserved
           </p>
           <p className="text-xs text-sky-50/60">
-            Designed by 4Bizinternational
+            Designed by 4Biz International LLC
           </p>
         </div>
       </div>
