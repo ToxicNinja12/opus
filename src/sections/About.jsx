@@ -1,12 +1,12 @@
 function AboutOverview() {
   return (
-    <div className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:pb-12 text-sky-950">
+    <div className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:mb-0 text-sky-950">
       {/* Mobile/tablet heading — plain, not sticky, no nav */}
       <h2 className="lg:hidden font-lead text-xl">Who are we?</h2>
 
       {/* Desktop label — sticky, spans all three blocks below */}
       <div className="hidden lg:block lg:row-span-3">
-        <div className="sticky top-32">
+        <div className="absolute top-32">
           <h2 className="font-lead text-xl">Who are we?</h2>
           <nav className="flex flex-col gap-1 mt-4 text-sm text-sky-950/60">
             <a
