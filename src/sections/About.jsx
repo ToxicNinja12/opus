@@ -34,43 +34,57 @@ function AboutOverview() {
       {/* ABOUT */}
       <div
         id="about-us"
-        className="lg:col-start-3 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-subgrid gap-y-8 gap-x-8 scroll-mt-24"
+        className="lg:col-start-3 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-subgrid gap-y-8 gap-x-8 scroll-mt-24 leading-snug"
       >
         <p className="font-lead text-xl sm:text-2xl col-span-full">
-          Opus Acoustics is a leading provider of innovative architectural
-          acoustic solutions across the Middle East. We specialize in
-          high-performance systems that blend sound quality with modern
-          aesthetics.
+          Opus Acoustics is a Dubai-based architectural acoustic solutions
+          company serving the UAE, GCC, and Europe.
         </p>
         <div className="lg:col-span-2">
-          <h3 className="font-lead">About Us</h3>
-          <p className="mb-3">
-            We are unique in providing high-end interior and architectural
-            specialty finishing products in the highly demanding construction
-            industry. Our past proven experience in bridging the gap between the
-            world’s leading manufacturers and regional architects, interior
-            designers, developers, and contractors gives us an edge in providing
-            innovative solutions.
+          <h3 className="font-lead mb-2">About Us</h3>
+          <p className="mb-1.5">
+            Established in 2019, we design, supply, and install acoustic panels,
+            wall systems, and noise control solutions engineered to meet
+            international performance standards while blending seamlessly with
+            modern interior design. With 7+ years of experience, our team has
+            supported architects, interior designers, and contractors across
+            commercial, hospitality, education, and industrial projects.
           </p>
           <p>
-            As a division of Opus Building Materials LLC, we provide complete
-            interior finishing solutions—from wall systems to premium
-            architectural finishes.
+            As a division of Opus Building Materials LLC, we deliver complete
+            interior finishing solutions — from acoustic wall systems to premium
+            architectural finishes — backed by direct manufacturing and
+            supply-chain expertise.
           </p>
         </div>
         <div className="lg:col-span-2">
-          <h3 className="font-lead">Our Mission</h3>
-          <p>
-            To deliver high-performance acoustic products that blend
-            functionality with aesthetic excellence - enhancing comfort through
-            craftsmanship and expert consultation.
-          </p>
-          <h3 className="font-lead mt-4">Our Vision</h3>
-          <p>
-            To be the region’s leading provider of innovative, design-driven
-            acoustic solutions that redefine how people experience sound in
-            modern spaces.
-          </p>
+          <h3 className="font-lead mb-2">What sets us apart</h3>
+          <ul className="list-disc flex flex-col gap-1.5 pl-4">
+            <li>
+              <strong className="font-semibold">
+                Advanced Sonic Modeling & Prediction
+              </strong>{" "}
+              — We simulate how sound will behave in a space before installation
+              begins, so acoustic issues are caught and corrected at the design
+              stage, not after construction.
+            </li>
+            <li>
+              <strong className="font-semibold">
+                International Standard Compliance
+              </strong>{" "}
+              — Every acoustic system we supply and install meets recognized
+              global acoustic and fire-safety standards, so architects and
+              contractors can specify with confidence.
+            </li>
+            <li>
+              <strong className="font-semibold">
+                Eco-Friendly & Sustainable Materials
+              </strong>{" "}
+              — Our acoustic panels are manufactured from sustainable,
+              low-impact materials, supporting green building certifications
+              without compromising sound performance.
+            </li>
+          </ul>
         </div>
       </div>
 
