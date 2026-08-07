@@ -157,18 +157,31 @@ function AboutOverview() {
           We have a global presence.
         </h3>
         <ol className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-          <li className="bg-slate-100 p-4">
-            <p className="mb-4">Dubai, UAE</p>
+          <li className="bg-slate-100 p-4 flex flex-col gap-4 justify-between">
+            <p className="">UAE Head Office</p>
             <p className="text-sm text-slate-500">
-              Head office and regional project delivery across the Emirates and
-              wider GCC.
+              Office 403, 4th Floor,
+              <br /> Al Saheel Tower 1, Al Nahda 1,
+              <br /> Dubai, UAE <br />
+              <div className="mt-1">
+                Phone: +971 50 826 5672 · (04) 564 6778
+              </div>
             </p>
           </li>
-          <li className="bg-slate-100 p-4">
-            <p className="mb-4">Europe</p>
+          <li className="bg-slate-100 p-4 flex flex-col gap-4">
+            <p className="">
+              European Branch — OPUS Europe Global SL / OPUS Europe SL
+            </p>
             <p className="text-sm text-slate-500">
-              European branch supporting international partnerships, technical
-              coordination and regional opportunities.
+              Avenida Maisonnave, nº 41, 3º H,
+              <br />
+              03003, Spain
+              <br />
+              <div className="mt-2">
+                Phone: +371 2027 2167
+                <br />
+                Email: Jashim@opuseurope.eu · rasheed@opusbm.com
+              </div>
             </p>
           </li>
         </ol>
