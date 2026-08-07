@@ -1,6 +1,6 @@
 function AboutOverview() {
   return (
-    <div className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:pb-32 text-sky-950">
+    <div className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:pb-12 text-sky-950">
       {/* Mobile/tablet heading — plain, not sticky, no nav */}
       <h2 className="lg:hidden font-lead text-xl">Who are we?</h2>
 
@@ -143,45 +143,6 @@ function AboutOverview() {
             <p className="text-sm text-slate-500">
               Enclosures, barriers, louvers and monitoring strategies for plant,
               equipment and environmental noise.
-            </p>
-          </li>
-        </ol>
-      </div>
-
-      {/* REGIONS */}
-      <div
-        id="our-locations"
-        className="lg:col-start-3 lg:col-span-4 scroll-mt-24"
-      >
-        <h3 className="font-lead text-xl sm:text-2xl mb-8">
-          We have a global presence.
-        </h3>
-        <ol className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-          <li className="bg-slate-100 p-4 flex flex-col gap-4 justify-between">
-            <p className="">UAE Head Office</p>
-            <p className="text-sm text-slate-500">
-              Office 403, 4th Floor,
-              <br /> Al Saheel Tower 1, Al Nahda 1,
-              <br /> Dubai, UAE <br />
-              <div className="mt-1">
-                Phone: +971 50 826 5672 · (04) 564 6778
-              </div>
-            </p>
-          </li>
-          <li className="bg-slate-100 p-4 flex flex-col gap-4">
-            <p className="">
-              European Branch — OPUS Europe Global SL / OPUS Europe SL
-            </p>
-            <p className="text-sm text-slate-500">
-              Avenida Maisonnave, nº 41, 3º H,
-              <br />
-              03003, Spain
-              <br />
-              <div className="mt-2">
-                Phone: +371 2027 2167
-                <br />
-                Email: Jashim@opuseurope.eu · rasheed@opusbm.com
-              </div>
             </p>
           </li>
         </ol>
