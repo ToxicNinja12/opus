@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import clsx from "clsx";
 
 import Underline from "./Underline";
 
 const links = [
-  { label: "About", href: "#" },
+  // { label: "About", href: "#" },
   { label: "Products", href: "#" },
   { label: "Clients", href: "#" },
   { label: "Career", href: "#" },
 ];
 
-function Navbar({ className }) {
+function Navbar({ className, flexMode = false }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -24,6 +25,9 @@ function Navbar({ className }) {
     <nav className={clsx("flex", className)}>
       {/* Desktop nav */}
       <ul className="hidden md:flex gap-6 w-full">
+        <li key="About">
+          <Link to="/about-us">About</Link>
+        </li>
         {links.map((link) => (
           <li key={link.label}>
             <a href={link.href}>{link.label}</a>
@@ -41,7 +45,10 @@ function Navbar({ className }) {
         onClick={() => setOpen(true)}
         aria-label="Open menu"
         aria-expanded={open}
-        className="md:hidden absolute top-4 right-6 sm:right-10 z-50 flex flex-col justify-center gap-1.5 w-8 h-8"
+        className={clsx(
+          "md:hidden z-50 flex flex-col justify-center gap-1.5 w-8 h-8",
+          !flexMode && "absolute top-4 right-6 sm:right-10",
+        )}
       >
         <span className="block h-0.5 w-full bg-sky-50" />
         <span className="block h-0.5 w-full bg-sky-50" />
@@ -76,6 +83,12 @@ function Navbar({ className }) {
         </button>
 
         <ul className="flex flex-col gap-6 mt-16">
+          <li key="Home">
+            <Link to="/">Home</Link>
+          </li>
+          <li key="About">
+            <Link to="/about-us">About</Link>
+          </li>
           {links.map((link) => (
             <li key={link.label}>
               <a href={link.href} onClick={() => setOpen(false)}>

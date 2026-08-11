@@ -11,7 +11,7 @@ function AcousticConsultancy() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 text-sky-950">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 lg:pt-0 text-sky-950">
       <div className="flex flex-col justify-center order-2 lg:order-1">
         <h2 className="font-lead text-2xl sm:text-3xl mb-6">
           Acoustic Consultancy

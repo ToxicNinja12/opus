@@ -1,34 +1,15 @@
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import AcousticConsultancy from "./sections/Acoustic Consultancy";
-import SiteInspection from "./sections/SiteInspection";
-import Services from "./sections/Services";
-import Products from "./sections/Products";
-import Featured from "./sections/Featured";
-import Timeline from "./sections/Timeline";
-import Regions from "./sections/Regions";
-import Testimonials from "./sections/Testimonials";
-import FAQ from "./sections/FAQ";
-import CTA from "./sections/CTA";
-import Footer from "./sections/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"; // your existing homepage with Hero, About, etc.
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <About />
-      {/* <Services /> */}
-      <AcousticConsultancy />
-      <SiteInspection />
-      <Regions />
-      <Products />
-      <Featured />
-      <Timeline />
-      <Testimonials />
-      <CTA />
-      <FAQ />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
