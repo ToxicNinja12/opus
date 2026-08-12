@@ -45,7 +45,7 @@ function Regions() {
                   href="tel:+97145646778"
                   className="hover:text-sky-950 transition-colors"
                 >
-                  (04) 564 6778
+                  +971 4 564 6778
                 </a>
               </p>
             </div>

@@ -34,7 +34,7 @@ function Navbar({ className, flexMode = false }) {
           </li>
         ))}
         <li className="ml-auto relative">
-          <a href="#">Contact Us</a>
+          <Link to="/contact">Contact Us</Link>
           <Underline className="text-primary absolute top-2 right-2" />
         </li>
       </ul>
@@ -97,9 +97,9 @@ function Navbar({ className, flexMode = false }) {
             </li>
           ))}
           <li className="relative w-fit">
-            <a href="#" onClick={() => setOpen(false)}>
+            <Link to="/contact" onClick={() => setOpen(false)}>
               Contact Us
-            </a>
+            </Link>
             <Underline className="text-primary absolute top-2 right-2 w-16" />
           </li>
         </ul>
