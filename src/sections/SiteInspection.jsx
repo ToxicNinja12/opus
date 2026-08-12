@@ -11,8 +11,12 @@ function SiteInspection() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 text-sky-950">
-      <div className="order-1">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 text-sky-950">
+      <h2 className="font-lead text-2xl sm:text-3xl lg:hidden">
+        Acoustic Site Inspection
+      </h2>
+
+      <div className="order-2 lg:order-1">
         <img
           src={InspectionImg}
           alt="Acoustic site inspection in progress"
@@ -20,8 +24,8 @@ function SiteInspection() {
         />
       </div>
 
-      <div className="flex flex-col justify-center order-2">
-        <h2 className="font-lead text-2xl sm:text-3xl mb-6">
+      <div className="flex flex-col justify-center order-3 lg:order-2">
+        <h2 className="hidden lg:block font-lead text-2xl sm:text-3xl mb-6">
           Acoustic Site Inspection
         </h2>
         <p className="mb-6 leading-relaxed">

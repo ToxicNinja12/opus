@@ -11,9 +11,21 @@ function AcousticConsultancy() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 lg:pt-0 text-sky-950">
-      <div className="flex flex-col justify-center order-2 lg:order-1">
-        <h2 className="font-lead text-2xl sm:text-3xl mb-6">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 px-6 sm:px-10 lg:px-20 py-16 lg:pt-0 text-sky-950">
+      <h2 className="font-lead text-2xl sm:text-3xl lg:hidden">
+        Acoustic Consultancy
+      </h2>
+
+      <div className="order-2 lg:order-2">
+        <img
+          src={ConsultancyImg}
+          alt="Acoustic consultancy site visit"
+          className="w-full h-64 sm:h-80 lg:h-full object-cover"
+        />
+      </div>
+
+      <div className="flex flex-col justify-center order-3 lg:order-1">
+        <h2 className="hidden lg:block font-lead text-2xl sm:text-3xl mb-6">
           Acoustic Consultancy
         </h2>
         <p className="mb-6 leading-relaxed">
@@ -44,14 +56,6 @@ function AcousticConsultancy() {
         >
           Book a Consultation &rarr;
         </a>
-      </div>
-
-      <div className="order-1 lg:order-2">
-        <img
-          src={ConsultancyImg}
-          alt="Acoustic consultancy site visit"
-          className="w-full h-64 sm:h-80 lg:h-full object-cover"
-        />
       </div>
     </section>
   );
