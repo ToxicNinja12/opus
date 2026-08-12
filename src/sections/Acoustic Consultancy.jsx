@@ -1,4 +1,4 @@
-import ConsultancyImg from "../assets/Acoustic Consultancy.jpg";
+import ConsultancyImg from "../assets/acoustic-consultancy-uae.png";
 
 function AcousticConsultancy() {
   const items = [
