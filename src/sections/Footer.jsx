@@ -173,7 +173,7 @@ function Footer() {
                   href="tel:+97145646778"
                   className="text-sm text-sky-50/60 hover:text-sky-50 transition-colors block"
                 >
-                  (04) 564 6778
+                  +971 4 564 6778
                 </a>
               </div>
 
