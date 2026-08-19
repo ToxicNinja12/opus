@@ -6,7 +6,7 @@ import Underline from "./Underline";
 
 const links = [
   // { label: "About", href: "#" },
-  { label: "Products", href: "#" },
+  // { label: "Products", href: "#" },
   { label: "Clients", href: "#" },
   { label: "Career", href: "#" },
 ];
@@ -27,6 +27,9 @@ function Navbar({ className, flexMode = false }) {
       <ul className="hidden md:flex gap-6 w-full">
         <li key="About">
           <Link to="/about-us">About</Link>
+        </li>
+        <li key="Products">
+          <Link to="/products">Products</Link>
         </li>
         {links.map((link) => (
           <li key={link.label}>
@@ -88,6 +91,9 @@ function Navbar({ className, flexMode = false }) {
           </li>
           <li key="About">
             <Link to="/about-us">About</Link>
+          </li>
+          <li key="Products">
+            <Link to="/products">Products</Link>
           </li>
           {links.map((link) => (
             <li key={link.label}>

@@ -1,0 +1,27 @@
+function ProductsCTA() {
+  return (
+    <section className="flex flex-col justify-center items-center px-6 sm:px-10 lg:px-20 pt-8 pb-16 mb-8 lg:mb-16 text-sky-50">
+      <div className="bg-secondary px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-20 w-full lg:w-5xl">
+        <div>
+          <h2 className="font-lead font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
+            Let's Design How Your Space Should Sound
+          </h2>
+          <p className="leading-snug">
+            Connect directly with our specialized acoustic engineering team to
+            help plan your next step.
+          </p>
+        </div>
+        <div className="flex flex-col justify-center gap-4 text-center">
+          <a href="#" className="bg-primary text-sky-50 px-6 py-4">
+            Request a Call
+          </a>
+          <a href="#" className="border border-slate-500 px-6 py-4">
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ProductsCTA;
