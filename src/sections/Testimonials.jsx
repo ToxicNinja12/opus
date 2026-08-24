@@ -12,6 +12,7 @@ import logo11 from "../assets/clients/logo-lycee-francais.png";
 import logo12 from "../assets/clients/logo-red-sea-international.png";
 import logo13 from "../assets/clients/logo-miral-studio.png";
 import logo14 from "../assets/clients/logo-aquila-school.png";
+import logo15 from "../assets/clients/logo-justlife.png";
 
 function Testimonials() {
   const logos = [
@@ -29,6 +30,7 @@ function Testimonials() {
     logo12,
     logo13,
     logo14,
+    logo15,
   ];
 
   return (
@@ -36,7 +38,7 @@ function Testimonials() {
       <h2 className="font-lead text-center text-xl mb-8 lg:mb-10">
         Trusted by 40+ leading companies
       </h2>
-      <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-12">
+      <div className="grid grid-cols-5 gap-x-4 sm:gap-x-8 gap-y-4 sm:gap-y-6 place-items-center">
         {logos.map((logo, index) => (
           <img
             key={index}
