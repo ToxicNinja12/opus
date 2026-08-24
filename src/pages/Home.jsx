@@ -1,6 +1,6 @@
 import Hero from "../sections/Hero";
 import About from "../sections/About";
-import AcousticConsultancy from "../sections/Acoustic Consultancy";
+import AcousticSolutions from "../sections/AcousticSolutions";
 import SiteInspection from "../sections/SiteInspection";
 import Services from "../sections/Services";
 import Products from "../sections/Products";
@@ -18,8 +18,8 @@ function Home() {
       <Hero />
       <About />
       {/* <Services /> */}
-      <AcousticConsultancy />
-      <SiteInspection />
+      <AcousticSolutions />
+      {/* <SiteInspection /> */}
       <Regions />
       <Products />
       <Featured />
