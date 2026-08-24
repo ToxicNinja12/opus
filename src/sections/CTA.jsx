@@ -12,10 +12,18 @@ function CTA() {
           </p>
         </div>
         <div className="flex flex-col justify-center gap-4 text-center">
-          <a href="#" className="bg-primary text-sky-50 px-6 py-4">
+          <a
+            href="tel:+971508265672"
+            className="bg-primary text-sky-50 px-6 py-4"
+          >
             Request a call
           </a>
-          <a href="#" className="border border-slate-500 px-6 py-4">
+          <a
+            href="https://wa.me/971508265672"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-slate-500 px-6 py-4"
+          >
             Message on WhatsApp
           </a>
         </div>
