@@ -8,7 +8,7 @@ function Regions() {
         <h2 className="font-lead text-xl sm:text-2xl mb-8">
           We have a global presence.
         </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 justify-between">
+        <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 justify-between">
           <li
             className="bg-slate-100 p-4 flex flex-col gap-4 justify-between"
             itemScope
@@ -100,6 +100,29 @@ function Regions() {
                   rasheed@opusbm.com
                 </a>
               </p>
+            </div>
+          </li>
+
+          <li
+            className="bg-slate-100 p-4 flex flex-col gap-4 justify-between"
+            itemScope
+            itemType="https://schema.org/Organization"
+          >
+            <p itemProp="name" className="font-semibold">
+              Indian Branch — OPUS India
+            </p>
+            <div className="text-sm text-slate-500">
+              <address
+                itemProp="address"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+                className="not-italic mb-2"
+              >
+                <span itemProp="streetAddress">Edavannapara, Malappuram</span>
+                <br />
+                <span itemProp="addressState">Kerala, </span>
+                <span itemProp="addressCountry">India</span>
+              </address>
             </div>
           </li>
         </ul>
