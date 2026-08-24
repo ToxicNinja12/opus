@@ -35,21 +35,27 @@ function Testimonials() {
 
   return (
     <section className="text-sky-950 px-6 sm:px-10 lg:px-20 py-12 lg:py-16">
-      <h2 className="font-lead text-center text-xl mb-8 lg:mb-10">
-        Trusted by 40+ leading companies
-      </h2>
-      <div className="grid grid-cols-5 gap-x-4 sm:gap-x-8 gap-y-4 sm:gap-y-6 place-items-center">
+      <h2 className="font-lead text-center text-xl mb-2">Our Clients</h2>
+      <p className="text-center text-sm text-slate-500 mb-10">
+        Trusted by 40+ leading companies across global markets
+      </p>
+
+      <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
         {logos.map((logo, index) => (
-          <img
+          <div
             key={index}
-            src={logo}
-            alt="Client logo"
-            className="h-10 sm:h-14 lg:h-18"
-            style={{
-              filter:
-                "contrast(25%) sepia(100%) hue-rotate(180deg) saturate(100%)",
-            }}
-          />
+            className="group relative flex items-center justify-center h-24 sm:h-28 lg:h-32 rounded-xl border border-slate-200 bg-slate-50 overflow-hidden transition-all duration-300 hover:border-primary/60 hover:shadow-[0_0_20px_rgba(0,0,0,0.08)]"
+          >
+            <img
+              src={logo}
+              alt="Client logo"
+              className="max-w-[65%] max-h-[45%] object-contain transition-transform duration-300 ease-out group-hover:scale-110"
+              style={{
+                filter:
+                  "contrast(25%) sepia(100%) hue-rotate(180deg) saturate(100%)",
+              }}
+            />
+          </div>
         ))}
       </div>
     </section>
