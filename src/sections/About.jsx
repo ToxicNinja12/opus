@@ -6,7 +6,7 @@ function AboutOverview() {
 
       {/* Desktop label — sticky, spans all three blocks below */}
       <div className="hidden lg:block lg:row-span-3">
-        <div className="absolute top-32">
+        <div className="sticky top-32 mb-21">
           <h2 className="font-lead text-xl">Who are we?</h2>
           <nav className="flex flex-col gap-1 mt-4 text-sm text-sky-950/60">
             <a
