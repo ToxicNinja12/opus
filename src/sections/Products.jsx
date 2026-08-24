@@ -5,7 +5,7 @@ import acouWood from "../assets/products/acou-wood.avif";
 import acouSlats from "../assets/products/wooden-Slatted-Panel.webp";
 import acousticSpray from "../assets/products/acoustic-spray.png";
 import acouWool from "../assets/products/acouwool.jpeg";
-import acouBamboo from "../assets/products/acouwool.jpeg"; // TODO: needs real image
+import acouBamboo from "../assets/products/acou-bamboo.jpg"; // TODO: needs real image
 
 function Products() {
   return (

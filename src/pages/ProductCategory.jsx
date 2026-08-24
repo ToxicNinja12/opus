@@ -15,7 +15,7 @@ import acousticSpray from "../assets/products/acoustic-spray.png";
 import acousticGlassPartition from "../assets/products/acoustic-glass-partition.jpg";
 
 // TODO: these assets don't exist yet — add files or update paths
-import acouBamboo from "../assets/products/acoustic-glass-partition.jpg";
+import acouBamboo from "../assets/products/acou-bamboo.jpg";
 import acousticCeilingTile from "../assets/featured/mesh-ceiling.jpg";
 import movableOperablePartition from "../assets/products/acoustic-glass-partition.jpg";
 import soundproofingWallCeiling from "../assets/products/acoustic-glass-partition.jpg";
