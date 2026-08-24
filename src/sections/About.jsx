@@ -131,18 +131,42 @@ function AboutOverview() {
           </li>
           <li>
             <p className="mb-3 text-slate-300">05</p>
-            <p className="mb-1">Workplace acoustics</p>
-            <p className="text-sm text-slate-500">
-              Speech privacy, focus and wellbeing across boardrooms,
-              collaborative zones and open-plan interiors.
-            </p>
-          </li>
-          <li>
-            <p className="mb-3 text-slate-300">06</p>
             <p className="mb-1">Industrial acoustics</p>
             <p className="text-sm text-slate-500">
               Enclosures, barriers, louvers and monitoring strategies for plant,
               equipment and environmental noise.
+            </p>
+          </li>
+          <li>
+            <p className="mb-3 text-slate-300">06</p>
+            <p className="mb-1">Commercial and Corporate</p>
+            <p className="text-sm text-slate-500">
+              Acoustic strategies for offices and boardrooms that balance speech
+              privacy, focus, and collaborative openness.
+            </p>
+          </li>
+          <li>
+            <p className="mb-3 text-slate-300">07</p>
+            <p className="mb-1">Hotels and Resorts</p>
+            <p className="text-sm text-slate-500">
+              Sound isolation and ambience control across guest rooms, lobbies
+              and event spaces for a premium guest experience.
+            </p>
+          </li>
+          <li>
+            <p className="mb-3 text-slate-300">08</p>
+            <p className="mb-1">Healthcare</p>
+            <p className="text-sm text-slate-500">
+              Noise control and speech privacy solutions supporting patient
+              recovery, confidentiality and clinical compliance.
+            </p>
+          </li>
+          <li>
+            <p className="mb-3 text-slate-300">09</p>
+            <p className="mb-1">Educational Spaces</p>
+            <p className="text-sm text-slate-500">
+              Speech intelligibility and reverberation control tailored for
+              classrooms, halls and learning environments.
             </p>
           </li>
         </ol>
