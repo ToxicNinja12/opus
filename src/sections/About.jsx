@@ -94,79 +94,55 @@ function AboutOverview() {
         className="lg:col-start-3 lg:col-span-4 scroll-mt-24"
       >
         <h3 className="font-lead text-xl sm:text-2xl mb-8">
-          We provide a variety of services.
+          We provide acoustic solutions for every space.
         </h3>
         <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-x-8 gap-y-8 lg:gap-y-4">
           <li>
             <p className="mb-3 text-slate-300">01</p>
-            <p className="mb-1">Architectural acoustics</p>
+            <p className="mb-1">Educational Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Clarity, comfort and controlled reverberation integrated into the
-              design language of the space.
+              Acoustic design and reverberation control for classrooms,
+              libraries and lecture halls.
             </p>
           </li>
           <li>
             <p className="mb-3 text-slate-300">02</p>
-            <p className="mb-1">Soundproofing & noise control</p>
+            <p className="mb-1">Commercial & Corporate Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Layered wall, ceiling and floor systems engineered to reduce
-              airborne and structure-borne transmission.
+              Soundproofing and speech privacy solutions for offices, meeting
+              rooms and boardrooms.
             </p>
           </li>
           <li>
             <p className="mb-3 text-slate-300">03</p>
-            <p className="mb-1">Auditorium & theatre</p>
+            <p className="mb-1">Healthcare & Hospital Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Performance-led treatments for speech intelligibility, even
-              distribution and audience comfort.
+              Noise control and acoustic privacy supporting patient comfort and
+              confidentiality.
             </p>
           </li>
           <li>
             <p className="mb-3 text-slate-300">04</p>
-            <p className="mb-1">Operable acoustic partitions</p>
+            <p className="mb-1">Auditorium & Theatre Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Flexible space division with tested sound insulation for
-              hospitality, education and commercial environments.
+              Acoustic treatments for speech clarity, balanced sound and
+              audience comfort.
             </p>
           </li>
           <li>
             <p className="mb-3 text-slate-300">05</p>
-            <p className="mb-1">Industrial acoustics</p>
+            <p className="mb-1">Hospitality Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Enclosures, barriers, louvers and monitoring strategies for plant,
-              equipment and environmental noise.
+              Sound insulation and ambience control for hotels, restaurants and
+              event spaces.
             </p>
           </li>
           <li>
             <p className="mb-3 text-slate-300">06</p>
-            <p className="mb-1">Commercial and Corporate</p>
+            <p className="mb-1">Industrial Acoustic Solutions</p>
             <p className="text-sm text-slate-500">
-              Acoustic strategies for offices and boardrooms that balance speech
-              privacy, focus, and collaborative openness.
-            </p>
-          </li>
-          <li>
-            <p className="mb-3 text-slate-300">07</p>
-            <p className="mb-1">Hotels and Resorts</p>
-            <p className="text-sm text-slate-500">
-              Sound isolation and ambience control across guest rooms, lobbies
-              and event spaces for a premium guest experience.
-            </p>
-          </li>
-          <li>
-            <p className="mb-3 text-slate-300">08</p>
-            <p className="mb-1">Healthcare</p>
-            <p className="text-sm text-slate-500">
-              Noise control and speech privacy solutions supporting patient
-              recovery, confidentiality and clinical compliance.
-            </p>
-          </li>
-          <li>
-            <p className="mb-3 text-slate-300">09</p>
-            <p className="mb-1">Educational Spaces</p>
-            <p className="text-sm text-slate-500">
-              Speech intelligibility and reverberation control tailored for
-              classrooms, halls and learning environments.
+              Noise-control systems for factories, machinery, equipment and
+              plant rooms.
             </p>
           </li>
         </ol>
