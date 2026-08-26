@@ -8,25 +8,26 @@ function AboutHero() {
   ];
 
   return (
-    <section className="bg-secondary text-sky-50 px-6 sm:px-10 lg:px-20 py-16 md:py-20">
+    <section className="bg-secondary text-sky-50 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-16 lg:pb-24">
       <div className="max-w-3xl">
         <p className="text-xs sm:text-sm tracking-widest uppercase text-primary mb-4">
-          Specialist Acoustic Consultancy
+          End-to-End Acoustic Solutions
         </p>
         <h1 className="font-lead text-3xl sm:text-4xl lg:text-5xl mb-6">
           Engineering Better Sound. Designing Better Spaces.
         </h1>
         <p className="mb-4 leading-relaxed">
-          Opus Acoustic is the specialist acoustic consultancy division of Opus
-          Building Materials LLC. We design, specify, and deliver acoustic
-          solutions — including acoustic wall and ceiling panels,
-          sound-absorptive baffles, and acoustic partitions — for architects,
-          consultants, and developers across the UAE, GCC, and Europe.
+          OPUS Acoustics is the specialist acoustic solutions division of OPUS
+          Building Materials LLC. We design, engineer, supply, install, test,
+          and hand over complete acoustic systems for projects across the UAE,
+          GCC, and Europe.
         </p>
         <p className="mb-8 leading-relaxed">
-          We help create spaces that sound as good as they look, from corporate
-          offices and schools to auditoriums, healthcare facilities, and
-          cultural venues.
+          From architectural acoustic finishes and sound-control systems to
+          industrial noise solutions and performance spaces, we work with
+          architects, consultants, developers, and contractors to deliver
+          acoustic clarity, comfort, and performance without compromising
+          design.
         </p>
         <a
           href="#our-story"
