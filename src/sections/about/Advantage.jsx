@@ -1,24 +1,29 @@
 function Advantage() {
   const items = [
     {
-      title: "Global Manufacturing Partnerships",
+      title: "Quality Products",
       description:
-        "Partnering with leading international acoustic manufacturers to deliver premium sound-engineering and acoustic panel solutions across the GCC and Europe.",
+        "Carefully selected acoustic materials suitable for demanding architectural and commercial applications.",
     },
     {
-      title: "Acoustic Specification Support",
+      title: "Technical Expertise",
       description:
-        "Comprehensive technical consultation, BOQ preparation, system recommendations, and acoustic specification assistance for architects and consultants.",
+        "Our team provides technical product selection, drawings, specifications and project support.",
     },
     {
-      title: "Sound Engineering Expertise",
+      title: "Professional Installation",
       description:
-        "Specialist acoustic design combining speech intelligibility, noise control, sustainability, and functional performance.",
+        "Experienced installation teams ensure acoustic systems are installed according to approved details and project requirements.",
     },
     {
-      title: "End-to-End Acoustic Delivery",
+      title: "Project Support",
       description:
-        "From acoustic consultancy and product selection to installation support and after-sales service — we ensure acoustic performance at every stage.",
+        "From enquiry and material selection through procurement, delivery and installation, we support the project at every stage.",
+    },
+    {
+      title: "Custom Solutions",
+      description:
+        "We can offer customized colours, sizes, patterns and alternative materials to meet architectural and performance requirements.",
     },
   ];
 
@@ -31,7 +36,7 @@ function Advantage() {
         Why Architects Choose Opus Acoustic
       </h2>
 
-      <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8">
+      <ol className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
         {items.map((item, i) => (
           <li key={item.title}>
             <p className="mb-3 text-slate-300">

@@ -2,7 +2,7 @@ import { Accordion, AccordionItem } from "../../components/Accordion";
 
 function AboutFAQ() {
   return (
-    <section className="px-6 sm:px-10 lg:px-20 py-16 text-sky-950">
+    <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
       <p className="text-xs sm:text-sm tracking-widest uppercase text-primary mb-4">
         Frequently Asked
       </p>
@@ -12,15 +12,37 @@ function AboutFAQ() {
 
       <Accordion>
         <AccordionItem title="What is Opus Acoustic?" defaultOpen>
-          Opus Acoustic is the specialist acoustic consultancy division of Opus
-          Building Materials LLC, providing acoustic engineering, sound
-          consultancy, and acoustic panel solutions for architects, consultants,
-          and developers across the UAE, GCC, and Europe.
+          Opus Acoustic is the specialized acoustics division of Opus Building
+          Materials LLC, providing professional acoustic and sound-control
+          solutions for architectural, commercial, hospitality, educational,
+          healthcare, residential, and industrial applications.
         </AccordionItem>
         <AccordionItem title="What acoustic services does Opus Acoustic provide?">
-          Opus Acoustic provides acoustic consultancy, sound engineering, speech
-          intelligibility design, noise control, and supply and installation of
-          acoustic wall and ceiling panels, baffles, and partitions.
+          <ul className="flex flex-col gap-0.5">
+            <li className="flex gap-3">
+              <span className="text-primary shrink-0">●</span>
+              <span>Acoustic wall and ceiling treatments</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary shrink-0">●</span>
+              <span>Acoustic partition and soundproofing systems</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary shrink-0">●</span>
+              <span>Acoustic material selection and specification support</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary shrink-0">●</span>
+              <span>
+                Technical support for architects, consultants, contractors, and
+                developers
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-primary shrink-0">●</span>
+              <span>Acoustic consultancy and design support</span>
+            </li>
+          </ul>
         </AccordionItem>
         <AccordionItem title="Where does Opus Acoustic operate?">
           Opus Acoustic is headquartered in Dubai, UAE, with an additional
