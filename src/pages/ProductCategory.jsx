@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
 import Card from "../components/Card";
 
-// Existing assets
 import acouMax from "../assets/products/acou-max.jpg";
 import acouFab from "../assets/products/acou-fab.png";
 import acouWood from "../assets/products/acou-wood.avif";
@@ -14,19 +13,19 @@ import acouWool from "../assets/products/acouwool.jpeg";
 import acousticSpray from "../assets/products/acoustic-spray.png";
 import acousticGlassPartition from "../assets/products/acoustic-glass-partition.jpg";
 
-// TODO: these assets don't exist yet — add files or update paths
 import acouBamboo from "../assets/products/acou-bamboo.jpg";
 import acousticCeilingTile from "../assets/featured/mesh-ceiling.jpg";
-import movableOperablePartition from "../assets/products/acoustic-glass-partition.jpg";
-import soundproofingWallCeiling from "../assets/products/acoustic-glass-partition.jpg";
-import acousticDoors from "../assets/products/acoustic-glass-partition.jpg";
-import acouMetal from "../assets/featured/diffuser-foam.jpg";
-import diffusers from "../assets/featured/diffuser-foam.jpg";
-import padding from "../assets/products/acoustic-glass-partition.jpg";
-import acousticFlooring from "../assets/products/acoustic-glass-partition.jpg";
-import acousticPlaster from "../assets/products/acoustic-glass-partition.jpg";
+import movableOperablePartition from "../assets/featured/movable-operable-partition.jpg";
+import soundproofingWallCeiling from "../assets/featured/soundproofing-wall-ceiling.jpeg";
+import acousticDoors from "../assets/products/acou-doors.jpg";
+import acouMetal from "../assets/products/acou-metal.jpg";
+import diffusers from "../assets/featured/diffusers.jpg";
+import padding from "../assets/products/padding.jpg";
+import acousticFlooring from "../assets/products/acou-flooring.jpg";
+import acousticPlaster from "../assets/products/acou-plaster.jpg";
 
 const products = [
+  // Row 1
   {
     name: "AcouMAX",
     description: "Polyester fibre acoustic panel for walls and ceilings.",
@@ -39,10 +38,10 @@ const products = [
     image: acouFab,
   },
   {
-    name: "AcouWOOD",
+    name: "AcouWOOL",
     description:
-      "Acoustic wooden perforated panel combining natural aesthetics with sound absorption.",
-    image: acouWood,
+      "Acoustic wood wool panel for high-performance sound absorption.",
+    image: acouWool,
   },
   {
     name: "AcouSLATS",
@@ -61,11 +60,18 @@ const products = [
     description: "High-density acoustic foam for targeted sound absorption.",
     image: polyurethaneFoam,
   },
+  // Row 2
   {
-    name: "AcouWOOL",
+    name: "AcouWOOD",
     description:
-      "Acoustic wood wool panel for high-performance sound absorption.",
-    image: acouWool,
+      "Acoustic wooden perforated panel combining natural aesthetics with sound absorption.",
+    image: acouWood,
+  },
+  {
+    name: "Acoustic Plaster",
+    description:
+      "Seamless acoustic plaster finish combining absorption with a smooth surface.",
+    image: acousticPlaster,
   },
   {
     name: "Acoustic Spray",
@@ -90,6 +96,7 @@ const products = [
       "Layered wall and ceiling systems built to reduce sound transmission.",
     image: soundproofingWallCeiling,
   },
+  // Row 3
   {
     name: "Acoustic Doors",
     description:
@@ -126,12 +133,6 @@ const products = [
       "Sound-dampening flooring systems for impact and airborne noise control.",
     image: acousticFlooring,
   },
-  {
-    name: "Acoustic Plaster",
-    description:
-      "Seamless acoustic plaster finish combining absorption with a smooth surface.",
-    image: acousticPlaster,
-  },
 ];
 
 function ProductCategory() {
@@ -151,23 +152,36 @@ function ProductCategory() {
           </Link>{" "}
         </p>
         <h1 className="font-lead text-3xl sm:text-4xl lg:text-5xl mb-6 max-w-2xl">
-          Architectural Acoustic
+          Architectural Acoustic Solutions
         </h1>
-        <p className="max-w-2xl leading-relaxed text-sky-50/80">
-          Acoustic wall, ceiling, and finishing systems engineered for
-          architectural interiors — combining sound performance with design
-          intent.
-        </p>
+        <div>
+          <p className="mb-4 leading-relaxed text-sky-50/80">
+            Opus Acoustic delivers a complete range of architectural acoustic
+            solutions — from acoustic wall panels and ceiling systems to
+            partitions, doors, and decorative finishes — engineered for
+            interiors across Dubai and the UAE. Every acoustic product is
+            designed to combine sound performance with architectural intent,
+            helping architects, designers, and contractors create spaces that
+            look as good as they sound.
+          </p>
+          <p className="leading-relaxed text-sky-50/80">
+            Whether you're specifying acoustic panels for Corporate & Commercial
+            Offices, ceiling tiles for Educational Spaces, or soundproofing
+            systems for a hospitality project, our architectural acoustic range
+            supports commercial, educational, healthcare, and cultural
+            developments across the region.
+          </p>
+        </div>
       </section>
 
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-6">
           {products.map((product) => (
             <Card
               key={product.name}
               image={product.image}
               title={product.name}
-              // subtitle={product.description}
+              subtitle={product.description}
             />
           ))}
         </div>
