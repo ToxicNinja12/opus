@@ -3,8 +3,6 @@ import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
 import Card from "../components/Card";
-import ProductCharacteristics from "../components/products/ProductCharacteristics";
-import FormatSelector from "../components/products/FormatSelector";
 
 import acouMax from "../assets/products/acou-max.jpg";
 import acouFab from "../assets/products/acou-fab.png";
@@ -176,34 +174,7 @@ function ProductCategory() {
         </div>
       </section>
 
-      {/* AcouMAX product detail — characteristics + format selector */}
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
-        <p className="text-xs sm:text-sm tracking-widest uppercase text-primary mb-2">
-          Featured Product
-        </p>
-        <h2 className="font-lead text-2xl sm:text-3xl mb-4">
-          AcouMAX &mdash; PET
-        </h2>
-        <p className="max-w-3xl leading-relaxed mb-16 text-slate-600">
-          AcouMAX polyester fiber acoustic panels are lightweight,
-          sound-absorbing panels made from 100% polyester fiber and contain a
-          maximum of 75% post-consumer recycled material (PET bottle flakes),
-          reducing internal and external sound influences. Safe, eco-friendly,
-          and available in multiple densities and thicknesses, they are ideal
-          for flexible and creative interior acoustic solutions.
-        </p>
-
-        <ProductCharacteristics />
-        <FormatSelector />
-      </section>
-
-      <section className="px-6 sm:px-10 lg:px-20 pt-8 pb-16 lg:pb-24 text-sky-950">
-        <p className="text-xs sm:text-sm tracking-widest uppercase text-primary mb-2">
-          Other Products
-        </p>
-        <h2 className="font-lead text-2xl sm:text-3xl mb-8">
-          View all our other products
-        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-6">
           {products.map((product) => (
             <Card
