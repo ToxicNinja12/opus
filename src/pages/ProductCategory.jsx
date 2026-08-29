@@ -30,6 +30,7 @@ const products = [
     name: "AcouMAX",
     description: "Polyester fibre acoustic panel for walls and ceilings.",
     image: acouMax,
+    slug: "acoumax",
   },
   {
     name: "AcouFAB",
@@ -176,14 +177,25 @@ function ProductCategory() {
 
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-6">
-          {products.map((product) => (
-            <Card
-              key={product.name}
-              image={product.image}
-              title={product.name}
-              subtitle={product.description}
-            />
-          ))}
+          {products.map((product) => {
+            const card = (
+              <Card
+                image={product.image}
+                title={product.name}
+                subtitle={product.description}
+              />
+            );
+            return product.slug ? (
+              <Link
+                key={product.name}
+                to={`/products/architectural-acoustic/${product.slug}`}
+              >
+                {card}
+              </Link>
+            ) : (
+              <div key={product.name}>{card}</div>
+            );
+          })}
         </div>
 
         <div className="flex justify-center mt-12">

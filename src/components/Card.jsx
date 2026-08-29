@@ -7,7 +7,7 @@ function Card({
 }) {
   if (onlyText) {
     return (
-      <div className="flex flex-col bg-primary-light-2 text-primary-dark px-3 py-4 justify-center items-center gap-2">
+      <div className="h-full flex flex-col bg-primary-light-2 text-primary-dark px-3 py-4 justify-center items-center gap-2">
         <p className="font-lead font-bold mb-0.5 text-xl sm:text-2xl leading-6 text-center mt-6">
           {title}
         </p>
@@ -16,7 +16,7 @@ function Card({
     );
   } else if (small) {
     return (
-      <div className="bg-primary-light-2 text-primary-dark px-2 py-3">
+      <div className="h-full flex flex-col bg-primary-light-2 text-primary-dark px-2 py-3">
         <div className="mb-4">
           <img
             src={image}
@@ -31,7 +31,7 @@ function Card({
     );
   } else {
     return (
-      <div className="bg-primary-light-2 text-primary-dark px-3 py-4">
+      <div className="h-full flex flex-col bg-primary-light-2 text-primary-dark px-3 py-4">
         <div className="mb-4">
           <img
             src={image}
