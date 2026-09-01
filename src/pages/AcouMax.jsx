@@ -4,9 +4,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
 import Card from "../components/Card";
 import ProductCharacteristics from "../sections/products/ProductCharacteristics";
+import ColorOptions from "../components/ColorOptions";
 
 // TODO: confirm exact filenames/extensions — truncated in file explorer screenshot
-import plainPanel from "../assets/products/acou-max/Acoustic 3d panel.png";
+import plainPanel from "../assets/products/acou-max/Plain Panel 2.jpeg";
 import groovedDesign from "../assets/products/acou-max/Grooved Design Panel.png";
 import acoustic3D from "../assets/products/acou-max/Acoustic 3d panel.png";
 import bafflesCeiling from "../assets/products/acou-max/Baffles Ceiling.png";
@@ -123,6 +124,7 @@ function AcouMax() {
       </section>
 
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
+        <ColorOptions />
         <ProductCharacteristics />
 
         <div>
