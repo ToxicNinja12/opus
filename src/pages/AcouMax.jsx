@@ -124,7 +124,6 @@ function AcouMax() {
       </section>
 
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
-        <ColorOptions />
         <ProductCharacteristics />
 
         <div>
@@ -149,7 +148,9 @@ function AcouMax() {
           </div>
         </div>
 
-        <div className="flex justify-center mt-12">
+        <ColorOptions />
+
+        <div className="flex justify-center">
           <a
             href="#"
             className="inline-block text-center bg-primary text-sky-50 px-6 py-4"

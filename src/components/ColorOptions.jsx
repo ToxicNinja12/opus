@@ -4,7 +4,7 @@ import swatches3 from "../assets/products/acou-max/colors-3.jpg";
 
 function ColorOptions() {
   return (
-    <div className="mb-16 lg:mb-24">
+    <div className="mb-8 mt-12">
       <div className="flex flex-col gap-6">
         <img
           src={swatches1}
