@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import ProductCategory from "./pages/ProductCategory";
 import AcouMax from "./pages/AcouMax";
 import PlainPanel from "./pages/acoumax/PlainPanel";
+import GroovedDesignPanel from "./pages/acoumax/GroovedDesignPanel";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/plain-panel"
           element={<PlainPanel />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/grooved-design-panel"
+          element={<GroovedDesignPanel />}
         />
       </Routes>
     </BrowserRouter>
