@@ -7,6 +7,7 @@ import ProductCategory from "./pages/ProductCategory";
 import AcouMax from "./pages/AcouMax";
 import PlainPanel from "./pages/acoumax/PlainPanel";
 import GroovedDesignPanel from "./pages/acoumax/GroovedDesignPanel";
+import Acoustic3DPanel from "./pages/acoumax/Acoustic3DPanel";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/grooved-design-panel"
           element={<GroovedDesignPanel />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/acoustic-3d-panels"
+          element={<Acoustic3DPanel />}
         />
       </Routes>
     </BrowserRouter>
