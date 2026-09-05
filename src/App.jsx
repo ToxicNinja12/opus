@@ -9,6 +9,7 @@ import PlainPanel from "./pages/acoumax/PlainPanel";
 import GroovedDesignPanel from "./pages/acoumax/GroovedDesignPanel";
 import Acoustic3DPanel from "./pages/acoumax/Acoustic3DPanel";
 import BafflesCeiling from "./pages/acoumax/BafflesCeiling";
+import CloudCeiling from "./pages/acoumax/CloudCeiling";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/baffles-ceiling"
           element={<BafflesCeiling />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/cloud-ceiling"
+          element={<CloudCeiling />}
         />
       </Routes>
     </BrowserRouter>
