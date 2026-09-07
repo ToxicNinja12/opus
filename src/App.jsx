@@ -4,6 +4,8 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import ProductCategory from "./pages/ProductCategory";
+
+// AcouMAX
 import AcouMax from "./pages/AcouMax";
 import PlainPanel from "./pages/acoumax/PlainPanel";
 import GroovedDesignPanel from "./pages/acoumax/GroovedDesignPanel";
@@ -13,6 +15,8 @@ import CloudCeiling from "./pages/acoumax/CloudCeiling";
 import DeskPartition from "./pages/acoumax/DeskPartition";
 import PrintedDesignPanel from "./pages/acoumax/PrintedDesignPanel";
 import ScreenPartition from "./pages/acoumax/ScreenPartition";
+import AcousticPhoneBooth from "./pages/acoumax/AcousticPhoneBooth";
+import ModularWallAcousticSystem from "./pages/acoumax/ModularWallAcousticSystem";
 
 function App() {
   return (
@@ -58,6 +62,14 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/screen-partition"
           element={<ScreenPartition />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/acoustic-phone-booth"
+          element={<AcousticPhoneBooth />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/modular-wall-acoustic-system"
+          element={<ModularWallAcousticSystem />}
         />
       </Routes>
     </BrowserRouter>
