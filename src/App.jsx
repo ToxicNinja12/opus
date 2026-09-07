@@ -10,6 +10,9 @@ import GroovedDesignPanel from "./pages/acoumax/GroovedDesignPanel";
 import Acoustic3DPanel from "./pages/acoumax/Acoustic3DPanel";
 import BafflesCeiling from "./pages/acoumax/BafflesCeiling";
 import CloudCeiling from "./pages/acoumax/CloudCeiling";
+import DeskPartition from "./pages/acoumax/DeskPartition";
+import PrintedDesignPanel from "./pages/acoumax/PrintedDesignPanel";
+import ScreenPartition from "./pages/acoumax/ScreenPartition";
 
 function App() {
   return (
@@ -43,6 +46,18 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/cloud-ceiling"
           element={<CloudCeiling />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/desk-partition"
+          element={<DeskPartition />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/printed-design-panel"
+          element={<PrintedDesignPanel />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoumax/screen-partition"
+          element={<ScreenPartition />}
         />
       </Routes>
     </BrowserRouter>
