@@ -48,6 +48,7 @@ function Products() {
         <Card
           title="View all our acoustic solutions"
           subtitle="See more &rarr;"
+          location="/products/architectural-acoustic"
           onlyText
         />
       </div>

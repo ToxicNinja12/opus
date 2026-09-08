@@ -1,6 +1,9 @@
 function AboutOverview() {
   return (
-    <div className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:mb-0 text-sky-950">
+    <div
+      className="relative grid grid-cols-1 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-20 px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-32 pb-20 lg:mb-0 text-sky-950"
+      id="about-overview"
+    >
       {/* Mobile/tablet heading — plain, not sticky, no nav */}
       <h2 className="lg:hidden font-lead text-xl">Who are we?</h2>
 

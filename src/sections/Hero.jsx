@@ -29,7 +29,7 @@ function Hero() {
             modern aesthetics across the Middle East.
           </p>
         </div>
-        <a href="#">Learn More &rarr;</a>
+        <a href="#about-overview">Learn More &rarr;</a>
       </div>
     </section>
   );

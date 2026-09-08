@@ -1,17 +1,32 @@
+import { Link } from "react-router-dom";
+
 function Card({
   image = null,
   title,
   subtitle,
   onlyText = false,
   small = false,
+  location = "",
 }) {
+  const scrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  };
+
   if (onlyText) {
     return (
       <div className="h-full flex flex-col bg-primary-light-2 text-primary-dark px-3 py-4 justify-center items-center gap-2">
         <p className="font-lead font-bold mb-0.5 text-xl sm:text-2xl leading-6 text-center mt-6">
           {title}
         </p>
-        <a href="#">{subtitle}</a>
+        <Link to={location} onClick={scrollToTop}>
+          {subtitle}
+        </Link>
       </div>
     );
   } else if (small) {
