@@ -47,13 +47,15 @@ function Card({
   } else {
     return (
       <div className="h-full flex flex-col bg-primary-light-2 text-primary-dark px-3 py-4">
-        <div className="mb-4">
-          <img
-            src={image}
-            alt=""
-            className="w-full aspect-square object-cover"
-          />
-        </div>
+        {image ? (
+          <div className="mb-4">
+            <img
+              src={image}
+              alt=""
+              className="w-full aspect-square object-cover"
+            />
+          </div>
+        ) : null}
         <div>
           <p className="font-bold mb-0.5">{title}</p>
           <p className="text-sm">{subtitle}</p>

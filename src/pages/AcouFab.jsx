@@ -4,27 +4,42 @@ import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
 import { Accordion, AccordionItem } from "../components/Accordion";
 
+import Card from "../components/Card";
+
+import PVCTrack from "../assets/products/acou-fab/pvc-track-stretch-system/1.png";
+import threedWrapped from "../assets/products/acou-fab/3d-wrapped-system/1.png";
+import cloudCeiling from "../assets/products/acou-fab/cloud-ceiling-system/1.png";
+import acouSoft from "../assets/products/acou-fab/acousoft-system/1.png";
+
 function AcouFab() {
   const systems = [
     {
       title: "PVC Track Stretch System",
       description:
         "Track-based framework system where acoustic fabric is stretched into interlocking jaws for a seamless, cost-effective finish — ideal for large-scale wall and ceiling coverage.",
+      slug: "pvc-track-stretch-system",
+      image: PVCTrack,
     },
     {
       title: "3D Wrapped System",
       description:
         "Sculptural, dimensional fabric-wrapped panels that combine decorative visual impact with strong sound absorption for statement interiors.",
+      slug: "3d-wrapped-system",
+      image: threedWrapped,
     },
     {
       title: "Decorative Baffles / Cloud Ceiling System",
       description:
         "Fabric-wrapped acoustic baffles and suspended ceiling elements that reduce reverberation in large, high-ceiling spaces while enhancing the overall design.",
+      slug: "cloud-ceiling-system",
+      image: cloudCeiling,
     },
     {
       title: "AcouSoft System",
       description:
         "Fiberglass-wool acoustic panel on a metal frame, wrapped in fabric for a soft, upholstered finish with reliable sound absorption — ideal for walls and feature areas.",
+      slug: "acousoft-system",
+      image: acouSoft,
     },
   ];
 
@@ -65,17 +80,19 @@ function AcouFab() {
           Our AcouFAB Systems
         </h2>
 
-        <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
-          {systems.map((system, i) => (
-            <li key={system.title}>
-              <p className="mb-3 text-slate-300">
-                {String(i + 1).padStart(2, "0")}
-              </p>
-              <p className="mb-1 font-semibold">{system.title}</p>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                {system.description}
-              </p>
-            </li>
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8">
+          {systems.map((system) => (
+            <Link
+              key={system.slug}
+              to={`/products/architectural-acoustic/acoumax/${system.slug}`}
+              className="block h-full"
+            >
+              <Card
+                image={system.image}
+                title={system.title}
+                subtitle={system.description}
+              />
+            </Link>
           ))}
         </ol>
       </section>
@@ -134,7 +151,7 @@ function AcouFab() {
           project.
         </p>
         <a href="#" className="inline-block bg-primary text-sky-50 px-6 py-4">
-          Contact Us
+          Contact Us &rarr;
         </a>
       </section>
 
