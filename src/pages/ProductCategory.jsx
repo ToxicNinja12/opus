@@ -37,6 +37,7 @@ const products = [
     description:
       "Stretch fabric acoustic panel for a seamless, tailored finish.",
     image: acouFab,
+    slug: "acoufab",
   },
   {
     name: "AcouWOOL",

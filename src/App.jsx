@@ -18,6 +18,9 @@ import ScreenPartition from "./pages/acoumax/ScreenPartition";
 import AcousticPhoneBooth from "./pages/acoumax/AcousticPhoneBooth";
 import ModularWallAcousticSystem from "./pages/acoumax/ModularWallAcousticSystem";
 
+// AcouFAB
+import AcouFab from "./pages/AcouFab";
+
 function App() {
   return (
     <BrowserRouter>
@@ -70,6 +73,10 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoumax/modular-wall-acoustic-system"
           element={<ModularWallAcousticSystem />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoufab"
+          element={<AcouFab />}
         />
       </Routes>
     </BrowserRouter>
