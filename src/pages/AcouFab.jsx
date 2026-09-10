@@ -84,7 +84,7 @@ function AcouFab() {
           {systems.map((system) => (
             <Link
               key={system.slug}
-              to={`/products/architectural-acoustic/acoumax/${system.slug}`}
+              to={`/products/architectural-acoustic/acoufab/${system.slug}`}
               className="block h-full"
             >
               <Card

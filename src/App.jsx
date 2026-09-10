@@ -20,6 +20,9 @@ import ModularWallAcousticSystem from "./pages/acoumax/ModularWallAcousticSystem
 
 // AcouFAB
 import AcouFab from "./pages/AcouFab";
+import PvcTrackStretchSystem from "./pages/acoufab/PvcTrackStretchSystem";
+import ThreeDWrappedSystem from "./pages/acoufab/3DWrappedSystem";
+import BafflesCloudCeilingSystem from "./pages/acoufab/BafflesCloudCeilingSystem";
 
 function App() {
   return (
@@ -77,6 +80,18 @@ function App() {
         <Route
           path="/products/architectural-acoustic/acoufab"
           element={<AcouFab />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoufab/pvc-track-stretch-system"
+          element={<PvcTrackStretchSystem />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoufab/3d-wrapped-system"
+          element={<ThreeDWrappedSystem />}
+        />
+        <Route
+          path="/products/architectural-acoustic/acoufab/cloud-ceiling-system"
+          element={<BafflesCloudCeilingSystem />}
         />
       </Routes>
     </BrowserRouter>
