@@ -3,7 +3,7 @@ function NumberedList({ items, className }) {
   return (
     <ol className={className}>
       {items.map((item, i) => (
-        <li key={item.title}>
+        <li key={i}>
           <p className="mb-3 text-slate-300">
             {String(i + 1).padStart(2, "0")}
           </p>

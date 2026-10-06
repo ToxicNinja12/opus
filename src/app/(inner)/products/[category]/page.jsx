@@ -1,16 +1,19 @@
 import ProductHero from "@/components/products/ProductHero";
 import Card from "@/components/ui/Card";
 import Link from "@/components/ui/Link";
-import { architecturalProducts } from "@/content/architectural-acoustic";
-import { categories } from "@/content/product-categories";
+import { getProducts, productPath } from "@/lib/cms";
 
+// Built on first visit and cached until the CMS reports a change.
 export function generateStaticParams() {
-  return categories.map((category) => ({ category: category.slug }));
+  return [];
 }
 
 // Every category slug renders the Architectural Acoustic listing for now —
-// the other categories don't have content of their own yet.
-export default function ProductCategoryPage() {
+// the other categories don't have content of their own yet. The cards come
+// from the CMS; a card links to its page only once that page is live.
+export default async function ProductCategoryPage() {
+  const products = await getProducts();
+
   return (
     <>
       <ProductHero
@@ -40,7 +43,7 @@ export default function ProductCategoryPage() {
 
       <section className="px-6 sm:px-10 lg:px-20 py-16 lg:py-24 text-sky-950">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-6">
-          {architecturalProducts.map((product) => {
+          {products.map((product) => {
             const card = (
               <Card
                 image={product.image}
@@ -49,15 +52,12 @@ export default function ProductCategoryPage() {
                 sizes="(min-width: 1024px) 17vw, (min-width: 640px) 33vw, 50vw"
               />
             );
-            return product.slug ? (
-              <Link
-                key={product.name}
-                href={`/products/architectural-acoustic/${product.slug}`}
-              >
+            return product.hasPage ? (
+              <Link key={product.slug} href={productPath(product.slug)}>
                 {card}
               </Link>
             ) : (
-              <div key={product.name}>{card}</div>
+              <div key={product.slug}>{card}</div>
             );
           })}
         </div>

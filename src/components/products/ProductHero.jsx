@@ -2,8 +2,9 @@ import clsx from "clsx";
 
 import Link from "@/components/ui/Link";
 
-// Dark banner at the top of every page under /products/<category>. Detail
-// pages pass a `subtitle`; overview pages pass their intro copy as children.
+// Dark banner at the top of every page under /products/<category>: a back
+// link, the title with an optional subtitle, and optional intro copy
+// (children).
 function ProductHero({
   backHref,
   backLabel,
@@ -25,7 +26,12 @@ function ProductHero({
         </Link>
       </p>
       {subtitle ? (
-        <h1 className="font-lead text-3xl sm:text-4xl lg:text-5xl max-w-3xl">
+        <h1
+          className={clsx(
+            "font-lead text-3xl sm:text-4xl lg:text-5xl max-w-3xl",
+            children && "mb-6",
+          )}
+        >
           {title}
           <span className="block mt-2 text-xl sm:text-2xl lg:text-3xl text-sky-50/80">
             {subtitle}

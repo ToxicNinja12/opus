@@ -5,11 +5,7 @@ function FaqList({ faqs }) {
   return (
     <Accordion>
       {faqs.map((faq, i) => (
-        <AccordionItem
-          key={faq.question}
-          title={faq.question}
-          defaultOpen={i === 0}
-        >
+        <AccordionItem key={i} title={faq.question} defaultOpen={i === 0}>
           {faq.answer}
         </AccordionItem>
       ))}
