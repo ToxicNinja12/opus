@@ -1,0 +1,17 @@
+# Build settings for Netlify. Anything set here overrides the same setting in
+# the Netlify dashboard.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # The CMS that product cards, pages and images are read from. Not a secret.
+  # REVALIDATE_SECRET is one: set it in the Netlify dashboard, never here.
+  CMS_URL = "https://cms.4bizglobal.com"
+
+# Deploys the build as a Next.js site (pages, functions, image optimisation).
+# Without it Netlify publishes the .next folder as plain files and every page
+# is a 404.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

@@ -26,6 +26,20 @@ Copy `.env.example` to `.env.local` and set `CMS_URL` (and the
 | `npm run start` | Serve the production build           |
 | `npm run lint`  | Run ESLint (`eslint-config-next`)    |
 
+## Deployment
+
+The site is deployed on Netlify from `main`. `netlify.toml` holds the build
+settings, the Next.js plugin that makes Netlify serve it as a Next.js site, and
+the address of the production CMS (`CMS_URL`).
+
+`CMS_URL` is read when the site is built and baked into it, so changing the CMS
+address means editing `netlify.toml` and redeploying.
+
+Set `REVALIDATE_SECRET` in the Netlify dashboard (Site configuration →
+Environment variables), with the same value the CMS uses. It is a secret, so it
+does not belong in the repository. Without it the site still works; CMS changes
+just take up to a minute to appear instead of showing at once.
+
 ## Project structure
 
 ```
